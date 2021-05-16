@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   margin: 0px 80px;
+  justify-content: space-around;
 }
 
 .logo {
@@ -78,7 +79,11 @@
   line-height: 21px;
   color: rgba(31, 46, 53, 0.8);
 }
-.itemX {
+.dropDown {
+  display: flex;
+  flex-direction: column;
+}
+.dropDownItem {
   display: flex;
   flex-direction: row;
   width: 68px;
@@ -95,6 +100,21 @@
 .chevron {
   margin: 0px 5px;
 }
+.popup {
+  margin: 10px;
+  margin-top: 0px;
+  padding-top: 30px;
+  position: absolute;
+  background-color: transparent;
+  display: none;
+}
+.dropDown:hover > .popup {
+  display: unset;
+}
+.div {
+  padding: 10px;
+}
+
 .media {
   display: flex;
   flex-direction: row;
@@ -102,12 +122,34 @@
   justify-content: space-between;
   flex: 1;
 }
-.media1 {
+.home {
   margin: 0px 5px;
 }
-.media2 {
+.mail {
   margin: 0px 5px;
 }
-.media3 {
+.shuffle {
   margin: 0px 5px;
+}
+.phoneMenu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0vh 2vw;
+    justify-content: space-between;
+  }
+  .phoneMenu {
+    display: unset;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
