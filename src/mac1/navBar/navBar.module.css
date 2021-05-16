@@ -1,0 +1,113 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 80px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+.description {
+  margin: 0px 5px;
+}
+.text1 {
+  width: 48px;
+  height: 14px;
+  left: 229px;
+  top: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 143.19%;
+  letter-spacing: 0.065em;
+  color: rgba(0, 0, 0, 0.6);
+}
+.text2 {
+  width: 48px;
+  height: 12px;
+  left: 229px;
+  top: 43px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: rgba(38, 50, 56, 0.8);
+}
+.text3 {
+  width: 48px;
+  height: 12px;
+  left: 229px;
+  top: 56px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  color: #263238;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px;
+  flex: 1;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 9;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 40px;
+}
+.item {
+  width: 68px;
+  height: 21px;
+  left: 385px;
+  top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(31, 46, 53, 0.8);
+}
+.itemX {
+  display: flex;
+  flex-direction: row;
+  width: 68px;
+  height: 21px;
+  left: 385px;
+  top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(31, 46, 53, 0.8);
+}
+.chevron {
+  margin: 0px 5px;
+}
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.media1 {
+  margin: 0px 5px;
+}
+.media2 {
+  margin: 0px 5px;
+}
+.media3 {
+  margin: 0px 5px;
+}
