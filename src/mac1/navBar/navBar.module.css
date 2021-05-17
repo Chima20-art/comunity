@@ -3,6 +3,7 @@
   flex-direction: row;
   margin: 0px 80px;
   justify-content: space-around;
+  height: 10vh;
 }
 
 .logo {
@@ -97,6 +98,18 @@
   line-height: 21px;
   color: rgba(31, 46, 53, 0.8);
 }
+.dropDownItemMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: rgba(31, 46, 53, 0.8);
+}
+
 .chevron {
   margin: 0px 5px;
 }
@@ -131,7 +144,13 @@
 .shuffle {
   margin: 0px 5px;
 }
-.phoneMenu {
+.menuButton {
+  display: none;
+}
+.menuItems {
+  display: none;
+}
+.menuItem {
   display: none;
 }
 
@@ -145,11 +164,42 @@
     margin: 0vh 2vw;
     justify-content: space-between;
   }
-  .phoneMenu {
+  .menuButton {
     display: unset;
     margin: 20px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .menuItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+  }
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 32px;
+    color: rgba(31, 46, 53, 0.8);
+  }
+  .contactItemMenu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 30vw;
+  }
+  .dropDownItemMenu {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 32px;
+    color: rgba(31, 46, 53, 0.8);
   }
 }
