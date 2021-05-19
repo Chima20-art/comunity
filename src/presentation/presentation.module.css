@@ -1,0 +1,54 @@
+.container {
+  margin-left: 184px;
+  margin-right: 131px;
+  margin-top: 51px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 70px 0px;
+}
+.blackTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 133.69%;
+  color: #1f2e35;
+  display: flex;
+  text-align: start;
+}
+.redTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 133.69%;
+  color: #ee4248;
+  display: flex;
+  text-align: start;
+}
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: #30444e;
+  margin: 24px 0px;
+  display: flex;
+  text-align: start;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 32px;
+  position: absolute;
+  background: #ee4248;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: white;
+}

@@ -1,8 +1,12 @@
 import React from "react";
 
+import { useState } from "react";
+
 import styles from "./navBar.module.css";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { showMobileMenu, setShowMobileMenu } = props;
+
   return (
     <div className={styles.container}>
       <div className={styles.navBar}>
@@ -60,57 +64,66 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <div className={styles.menuButton}>
+        <div
+          className={styles.menuButton}
+          onClick={() => setShowMobileMenu(!showMobileMenu)}
+        >
           <div>
-            <img src="/text_align_right.png"></img>
+            {!showMobileMenu === true ? (
+              <img src="/text_align_right.png"></img>
+            ) : (
+              <img className={styles.xmark} src="/xmark.jpg"></img>
+            )}
           </div>
         </div>
       </div>
-      <div className={styles.menuItems}>
-        <div className={styles.menuItem}>Services</div>
-        <div className={styles.menuItem}>Products</div>
-        <div className={styles.menuItem}>Technology</div>
-        <div className={styles.menuItem}>
-          {" "}
-          <div className={styles.dropDownItemMenu}>
-            <div>About</div>
-            <div>
-              <img className={styles.chevron} src="/chevron_down.png"></img>
+      {showMobileMenu && (
+        <div className={styles.menuItems}>
+          <div className={styles.menuItem}>Services</div>
+          <div className={styles.menuItem}>Products</div>
+          <div className={styles.menuItem}>Technology</div>
+          <div className={styles.menuItem}>
+            {" "}
+            <div className={styles.dropDownItemMenu}>
+              <div>About</div>
+              <div>
+                <img className={styles.chevron} src="/chevron_down.png"></img>
+              </div>
+            </div>
+            <div className={styles.popup}>
+              <div className={styles.div}>link 3</div>
+              <div className={styles.div}>link 4</div>
             </div>
           </div>
-          <div className={styles.popup}>
-            <div className={styles.div}>link 3</div>
-            <div className={styles.div}>link 4</div>
+          <div className={styles.menuItem}>
+            {" "}
+            <div className={styles.dropDownItemMenu}>
+              <div>Client</div>
+              <div>
+                <img className={styles.chevron} src="/chevron_down.png"></img>
+              </div>
+            </div>
+            <div className={styles.popup}>
+              <div className={styles.div}>link 3</div>
+              <div className={styles.div}>link 4</div>
+            </div>
+          </div>
+          <div className={styles.menuItem}>Partner</div>
+          <div className={styles.menuItem}>
+            <div className={styles.contactItemMenu}>
+              <div>
+                <img className={styles.home} src="/Union.png"></img>
+              </div>
+              <div>
+                <img className={styles.mail} src="/mail.png"></img>
+              </div>
+              <div>
+                <img className={styles.shuffle} src="/shuffle.png"></img>
+              </div>
+            </div>
           </div>
         </div>
-        <div className={styles.menuItem}>
-          {" "}
-          <div className={styles.dropDownItemMenu}>
-            <div>Client</div>
-            <div>
-              <img className={styles.chevron} src="/chevron_down.png"></img>
-            </div>
-          </div>
-          <div className={styles.popup}>
-            <div className={styles.div}>link 3</div>
-            <div className={styles.div}>link 4</div>
-          </div>
-        </div>
-        <div className={styles.menuItem}>Partner</div>
-        <div className={styles.menuItem}>
-          <div className={styles.contactItemMenu}>
-            <div>
-              <img className={styles.home} src="/Union.png"></img>
-            </div>
-            <div>
-              <img className={styles.mail} src="/mail.png"></img>
-            </div>
-            <div>
-              <img className={styles.shuffle} src="/shuffle.png"></img>
-            </div>
-          </div>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

@@ -153,6 +153,10 @@
 .menuItem {
   display: none;
 }
+.xmark {
+  width: 3vw;
+  height: 3vh;
+}
 
 @media (max-width: 1100px) {
   .menu {
