@@ -39,16 +39,93 @@
   display: flex;
   text-align: start;
 }
+.media {
+  width: 562.97px;
+  height: 381.61px;
+}
 .button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   padding: 12px 32px;
-  position: absolute;
+  width: 130px;
   background: #ee4248;
   border-radius: 4px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   color: white;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .media {
+    width: 349px;
+    height: 236.57px;
+    margin: auto;
+    padding-top: 60px;
+  }
+  .presentationText {
+    width: 383px;
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .blackTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 133.69%;
+    color: #1f2e35;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .redTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 133.69%;
+    color: #ee4248;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 32px;
+    background: #ee4248;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: white;
+    margin: auto;
+  }
 }
