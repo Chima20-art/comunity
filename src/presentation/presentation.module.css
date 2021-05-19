@@ -62,7 +62,7 @@
   .container {
     height: 100vh;
     margin: 0px;
-    padding: 0px;
+    padding: 15px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -76,6 +76,7 @@
   .presentationText {
     width: 383px;
     height: 303px;
+    margin: 14px 31px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +110,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 29px;
-    margin: 24px 0px;
+
     display: flex;
     flex-direction: column;
     text-align: center;
