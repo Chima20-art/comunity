@@ -1,7 +1,7 @@
-.container {
+.information {
   display: flex;
   flex-direction: row;
-  margin: 0px 150px;
+  margin: 35px 150px;
 }
 .adress {
   flex: 1;
@@ -45,7 +45,7 @@
   margin: 10px 0px;
   color: #263238;
 }
-.information {
+.contacts {
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -70,4 +70,14 @@
 }
 .logoX {
   object-fit: contain;
+}
+.footer {
+  background-color: #ee4248;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px;
 }
