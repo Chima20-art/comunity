@@ -4,13 +4,18 @@ import styles from "./grayDiv.module.css";
 export default function grayDiv() {
   return (
     <div className={styles.container}>
-      <img className={styles.desk} src="/desk.png"></img>
+      <div className={styles.desk}>
+        <img className={styles.deskImg} src="/desk.png" />
+      </div>
       <div className={styles.text}>
         <div className={styles.multicolorTitle}>
-          <div className={styles.black}>Welcome to </div>
-          <div className={styles.red}> Dwidasa Samsara</div>
+          <p className={styles.black}>
+            Welcome to <span className={styles.red}>Dwidasa Samsara</span>
+            <br />
+            <span className={styles.redTitle}>Indonesia (DSI)</span>
+          </p>
         </div>
-        <div className={styles.redTitle}>Indonesia (DSI)</div>
+
         <div className={styles.description}>
           <p className={styles.paragraph}>
             Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by

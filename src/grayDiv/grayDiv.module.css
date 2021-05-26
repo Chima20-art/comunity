@@ -4,26 +4,25 @@
   background-color: #f7f7f7;
 }
 .desk {
-  width: 452.94px;
-  height: 432px;
+  flex: 1;
 
-  margin-left: 193px;
-  margin-right: 83px;
+  margin: 0px 40px;
+}
+
+.deskImg {
+  object-fit: contain;
+  max-width: 453px;
 }
 .text {
-  width: 520px;
-  height: 380px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 60px;
-
-  margin-right: 193px;
+  margin: 0px 40px;
 }
 .multicolorTitle {
-  display: flex;
-  flex-direction: row;
 }
 .black {
   font-style: normal;
@@ -32,6 +31,7 @@
   line-height: 133.69%;
   color: #1f2e35;
   margin-right: 10px;
+  text-align: left;
 }
 .red {
   font-style: normal;
@@ -46,9 +46,6 @@
   font-size: 32px;
   line-height: 133.69%;
   color: #ee4248;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .description {
   font-style: normal;
@@ -66,23 +63,18 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #f7f7f7;
-    margin: auto;
+    margin-left: 6vw;
+    margin-right: 6vw;
   }
   .desk {
     display: flex;
     flex-direction: row;
-    justify-self: center;
-    width: 349px;
-    height: 340.54px;
-
-    margin-left: 31px;
-    margin-right: 31px;
+    justify-content: center;
   }
   .text {
-    width: 520px;
-    height: 380px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
