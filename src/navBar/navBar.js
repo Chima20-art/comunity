@@ -70,7 +70,7 @@ export default function NavBar(props) {
         >
           <div>
             {!showMobileMenu === true ? (
-              <img src="/text_align_right.png"></img>
+              <img src="/menu.png"></img>
             ) : (
               <img className={styles.xmark} src="/xmark.jpg"></img>
             )}

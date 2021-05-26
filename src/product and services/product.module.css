@@ -18,13 +18,14 @@
 .list {
   display: flex;
   flex-direction: row;
-  margin: 17px 0px;
+  justify-content: space-between;
+  margin: 20px 0px;
 }
 .listItem {
   flex: 1;
   margin: 15px;
-  min-height: 368px;
-  min-width: 368px;
+  height: 360px;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   text-align: start;
