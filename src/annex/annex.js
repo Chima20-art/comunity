@@ -10,23 +10,25 @@ export default function Annex() {
         </div>
         <div className={styles.subTitle}>PT Dwidasa Samsara Indonesia</div>
         <div className={styles.text}>
-          Ruko Jalur Sutera 29A No. 53 Alam Sutera Serpong, Tangerang 15323
+          <div>Ruko Jalur Sutera 29A No. 53 </div>
+          <div>Alam Sutera Serpong, Tangerang 15323</div>
         </div>
       </div>
       <div className={styles.contact}>
         <div className={styles.title}>Contact</div>
         <div className={styles.information}>
-          Phone : +62.21.5314.1135 Fax : +62.21.5314.1135 Email :
-          community@dwidasa.com
+          <div>Phone : +62.21.5314.1135</div>
+          <div>Fax : +62.21.5314.1135</div>
+          <div> Email : community@dwidasa.com</div>
         </div>
       </div>
       <div className={styles.logos}>
-        <img src="/silverlight.png" />
-        <img src="/dotNet.png" />
-        <img src="/java.png" />
-        <img src="/ios.png" />
-        <img src="/android.png" />
-        <img src="/blackBerry.png" />
+        <img className={styles.logo} src="/silverlight.png" />
+        <img className={styles.logo} src="/dotNet.png" />
+        <img className={styles.logoX} src="/java.png" />
+        <img className={styles.logo} src="/ios.png" />
+        <img className={styles.logo} src="/android.png" />
+        <img className={styles.logoX} src="/blackBerry.png" />
       </div>
     </div>
   );
