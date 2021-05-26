@@ -18,10 +18,13 @@
 .list {
   display: flex;
   flex-direction: row;
+  margin: 17px 0px;
 }
 .listItem {
-  padding: 24px;
-  max-width: 400px;
+  flex: 1;
+  margin: 15px;
+  min-height: 368px;
+  min-width: 368px;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -43,7 +46,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 150%;
   color: #30444e;
 }
