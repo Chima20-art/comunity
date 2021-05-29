@@ -80,6 +80,9 @@
   line-height: 21px;
   color: rgba(31, 46, 53, 0.8);
 }
+.item:hover {
+  cursor: pointer;
+}
 .dropDown {
   display: flex;
   flex-direction: column;
@@ -157,8 +160,7 @@
   width: 3vw;
   height: 3vh;
 }
-
-@media (max-width: 1100px) {
+. @media (max-width: 1100px) {
   .menu {
     display: none;
   }
