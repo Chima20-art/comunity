@@ -49,7 +49,6 @@ export default function NavBar(props) {
                 <div className={styles.div}>link 4</div>
               </div>
             </div>
-
             <div className={styles.item}> Partner</div>
           </div>
           <div className={styles.media}>

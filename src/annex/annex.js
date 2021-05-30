@@ -24,7 +24,7 @@ export default function Annex() {
           </div>
         </div>
         <div className={styles.logos}>
-          <img className={styles.logo} src="/silverlight.png" />
+          <img className={styles.logoNet} src="/silverlight.png" />
           <img className={styles.logo} src="/dotNet.png" />
           <img className={styles.logoX} src="/java.png" />
           <img className={styles.logo} src="/ios.png" />

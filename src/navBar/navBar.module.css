@@ -87,6 +87,9 @@
   display: flex;
   flex-direction: column;
 }
+.dropDown:hover {
+  cursor: pointer;
+}
 .dropDownItem {
   display: flex;
   flex-direction: row;
@@ -111,6 +114,9 @@
   font-size: 36px;
   line-height: 42px;
   color: rgba(31, 46, 53, 0.8);
+}
+.dropDownItemMenu:hover {
+  cursor: pointer;
 }
 
 .chevron {
@@ -141,15 +147,31 @@
 .home {
   margin: 0px 5px;
 }
+.home:hover {
+  cursor: pointer;
+}
 .mail {
   margin: 0px 5px;
+}
+.mail:hover {
+  cursor: pointer;
 }
 .shuffle {
   margin: 0px 5px;
 }
+.shuffle:hover {
+  cursor: pointer;
+}
 .menuButton {
   display: none;
 }
+.menuButton:hover {
+  cursor: pointer;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+
 .menuItems {
   display: none;
 }
@@ -160,7 +182,8 @@
   width: 3vw;
   height: 3vh;
 }
-. @media (max-width: 1100px) {
+
+@media (max-width: 1100px) {
   .menu {
     display: none;
   }
