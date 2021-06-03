@@ -6,7 +6,8 @@ import styles from "./navBar.module.css";
 
 export default function NavBar(props) {
   const { showMobileMenu, setShowMobileMenu } = props;
-  const [showSmallMenu, setShowSmallMenu] = useState(false);
+  const [showAboutMenu, setShowAboutMenu] = useState(false);
+  const [showClientMenu, setShowClientMenu] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -84,7 +85,7 @@ export default function NavBar(props) {
           <div className={styles.menuItem}>Technology</div>
           <div
             className={styles.menuItem}
-            onClick={() => setShowSmallMenu(!showSmallMenu)}
+            onClick={() => setShowAboutMenu(!showAboutMenu)}
           >
             {" "}
             <div className={styles.dropDownItemMenu}>
@@ -96,22 +97,27 @@ export default function NavBar(props) {
             <div
               className={styles.smallMenu}
               style={{
-                display: showSmallMenu ? "unset" : "none",
+                display: showAboutMenu ? "unset" : "none",
               }}
             >
               <div className={styles.smallMenuItem}>link 3</div>
               <div className={styles.smallMenuItem}>link 4</div>
             </div>
           </div>
-          <div className={styles.menuItem}>
-            {" "}
+          <div
+            className={styles.menuItem}
+            onClick={() => setShowClientMenu(!showClientMenu)}
+          >
             <div className={styles.dropDownItemMenu}>
               <div>Client</div>
               <div>
                 <img className={styles.chevron} src="/chevron_down.png"></img>
               </div>
             </div>
-            <div className={styles.popup}>
+            <div
+              className={styles.popup}
+              style={{ display: showClientMenu ? "unset" : "none" }}
+            >
               <div className={styles.div}>link 3</div>
               <div className={styles.div}>link 4</div>
             </div>
