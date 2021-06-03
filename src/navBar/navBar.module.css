@@ -231,4 +231,15 @@
     line-height: 32px;
     color: rgba(31, 46, 53, 0.8);
   }
+  .popup {
+    margin: 10px;
+    margin-top: 0px;
+    padding-top: 30px;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+  }
+  .dropDown:hover > .popup {
+    display: unset;
+  }
 }
