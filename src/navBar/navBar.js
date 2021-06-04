@@ -8,6 +8,7 @@ export default function NavBar(props) {
   const { showMobileMenu, setShowMobileMenu } = props;
   const [showAboutMenu, setShowAboutMenu] = useState(false);
   const [showClientMenu, setShowClientMenu] = useState(false);
+  const [showServices, setShowServices] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -24,7 +25,13 @@ export default function NavBar(props) {
         </div>
         <div className={styles.menu}>
           <div className={styles.buttons}>
-            <div className={styles.item}> Services</div>
+            <div
+              className={styles.item}
+              onClick={() => setShowServices(!showServices)}
+            >
+              {" "}
+              Services
+            </div>
             <div className={styles.item}> Products</div>
             <div className={styles.item}> Technology</div>
             <div className={styles.dropDown}>
@@ -65,6 +72,10 @@ export default function NavBar(props) {
             </div>
           </div>
         </div>
+        {showServices && (
+          <div style={{ backgroundColor: "red" }}>jhbdfjhbvb</div>
+        )}
+
         <div
           className={styles.menuButton}
           onClick={() => setShowMobileMenu(!showMobileMenu)}
